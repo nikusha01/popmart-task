@@ -13,25 +13,22 @@ export const useFetch = <T>(url: string, method = "GET") => {
 
       try {
         const res = await fetch(url, {
-          method: method,
           signal: controller.signal,
         });
-
         if (!res.ok) {
           throw new Error(res.statusText);
         }
-
-        const jsonData = await res.json();
+        const data = await res.json();
 
         setIsPending(false);
-        setData(jsonData);
+        setData(data);
         setError(null);
       } catch (err: any) {
         if (err.name === "AbortError") {
-          console.log("The fetch was aborted");
+          console.log("the fetch was aborted");
         } else {
           setIsPending(false);
-          setError("Could not fetch the data: " + err.message); 
+          setError("Could not fetch the data");
         }
       }
     };

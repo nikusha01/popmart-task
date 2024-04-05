@@ -6,24 +6,7 @@
     padding: 40px;
     box-sizing: border-box;
 }
-.post ul{
-    display: flex;
-    padding: 0;
-    justify-content: center;
-    margin-top: 0;
-}
-.post li{
-    list-style-type: none;
-    margin-right: 10px;
-    color: #777;
-}
-.post li::after{
-    content: ",";
-}
-.post li:last-child::after{
-    content: ".";
-}
-.method{
+.post-body{
     text-align: left;
     line-height: 1.5em;
 }

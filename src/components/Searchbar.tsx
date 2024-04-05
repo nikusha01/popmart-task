@@ -9,11 +9,11 @@ type Props = {
 const Searchbar: React.FC<Props> = ({ searchTerm, setSearchTerm }) => {
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search</label>
       <input
         type="text"
         id="search"
         value={searchTerm}
+        placeholder='Search'
         onChange={(e) => setSearchTerm(e.target.value)}
         required
       />

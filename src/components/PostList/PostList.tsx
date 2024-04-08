@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./PostList.css";
-import { IPost } from "../interfaces/posts";
+import { IPost } from "../../interfaces/posts";
 
 type Props = {
   posts: IPost[];

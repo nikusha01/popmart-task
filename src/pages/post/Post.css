@@ -10,3 +10,9 @@
     text-align: left;
     line-height: 1.5em;
 }
+
+@media  screen and (max-width: 1024px) {
+    .post{
+        margin: 40px 16px;
+    }
+}

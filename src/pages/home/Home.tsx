@@ -3,7 +3,7 @@ import { useFetch } from "../../hooks/useFetch";
 import { useSearch } from "../../context/Appcontext";
 import { IPost } from '../../interfaces/posts';
 
-import PostList from "../../components/PostList";
+import PostList from "../../components/PostList/PostList";
 import "./Home.css";
 
 

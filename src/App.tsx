@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 // page components
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/home/Home";
 import Post from "./pages/post/Post";
 import { SearchProvider } from "./context/Appcontext";

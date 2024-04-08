@@ -11,7 +11,6 @@ export default function Post() {
 
   const post = posts && posts[0];
 
-  console.log(post);
   return (
     <div className="post">
       {error && <p className="error">{error}</p>}

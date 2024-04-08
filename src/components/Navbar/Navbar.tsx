@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 
 import './Navbar.css'
-import Searchbar from './Searchbar'
-import { useSearch } from '../context/Appcontext';
+import Searchbar from '../SearchBar/Searchbar'
+import { useSearch } from '../../context/Appcontext';
 
 
 export default function Navbar() {

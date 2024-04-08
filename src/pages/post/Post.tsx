@@ -7,7 +7,9 @@ import { IPost } from "../../interfaces/posts";
 export default function Post() {
   const { id } = useParams<string>();
   const url = "https://jsonplaceholder.typicode.com/posts?id=" + id;
-  const { data: post, isPending, error } = useFetch<IPost>(url);
+  const { data: posts, isPending, error } = useFetch<IPost[]>(url);
+
+  const post = posts && posts[0];
 
   console.log(post);
   return (
